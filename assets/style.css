@@ -19,6 +19,10 @@ body {
   align-items: center;
 }
 
+blockquote {
+  font-size: 2.5rem;
+}
+
 .top-header .name {
   font-size: 26px;
 }
@@ -321,9 +325,13 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
+  blockquote {
+    font-size: 1rem;
+  }
   .top-header {
     flex-direction: column;
-    padding-inline: 0;
+    padding: 0;
+    white-space: nowrap;
   }
   .top-header .nav,
   .top-header .nav ul {
@@ -347,8 +355,7 @@ input[type="submit"] {
   }
   #about,
   #contact {
-    padding-inline: 2em;
-    padding-block: 2em;
+    padding: 2em;
   }
   form {
     width: 100%;
